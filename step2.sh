@@ -27,7 +27,10 @@ chown -R near:near /home/near
 
 # add user to groups
 adduser near wheel
-addgroup near docker video input
+groupadd docker
+addgroup near input 
+addgroup near docker
+addgroup near video
 
 # give near write access to /opt dir
 chown near:near /opt
