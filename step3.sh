@@ -1,4 +1,5 @@
 #!/bin/ash
+dbus-uuidgen > /var/lib/dbus/machine-id
 
 rc-service dbus start
 rc-update add dbus
