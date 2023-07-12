@@ -2,7 +2,7 @@
 
 apk add wget curl net-tools build-base xrandr dbus dbus-x11 setup-xorg-base  xterm
 apk add i3wm i3status i3lock dmenu font-terminus
-apk add mesa-gl doas
+apk add mesa-gl doas docker docker-compose
 
 # add user
 adduser near
@@ -34,6 +34,8 @@ adduser near video
 
 # give near write access to /opt dir
 chown near:near /opt
+
+setup-xorg-base
 
 # mkdir /opt/docker
 # mkdir -p /opt/docker
