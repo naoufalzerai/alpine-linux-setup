@@ -1,8 +1,9 @@
 #!/bin/ash
 
-apk add wget curl net-tools build-base xrandr dbus dbus-x11 setup-xorg-base  xterm
+apk add wget curl net-tools 
+apk add build-base xrandr dbus-x11 setup-xorg-base xterm
 apk add i3wm i3status i3lock dmenu font-terminus
-apk add mesa-gl doas docker docker-compose
+apk add mesa-gl doas docker docker-compose dbus vim
 
 # add user
 adduser near

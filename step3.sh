@@ -10,3 +10,5 @@ rc-service docker start
 rc-update add docker boot
 
 dbus-uuidgen > /var/lib/dbus/machine-id
+
+startx /usr/bin/i3
