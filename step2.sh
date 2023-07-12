@@ -17,19 +17,17 @@ mkdir -p /home/near/.scripts
 cp ./near/login-script.sh /home/near/.scripts/login-script.sh
 chown -R near:near /home/near
 
-adduser near wheel
 
 # greeter background
 # echo "background=/home/near/wallpaper/compass.jpg" >> /etc/lightdm/lightdm-gtk-greeter.conf
 
 # set background image in accountsservice
-cp ./near/near /var/lib/AccountsService/users
-chown root:root /var/lib/AccountsService/users/near
+# cp ./near/near /var/lib/AccountsService/users
+# chown root:root /var/lib/AccountsService/users/near
 
 # add user to groups
-addgroup near docker
-addgroup near input
-addgroup near video
+adduser near wheel
+addgroup near docker video input
 
 # give near write access to /opt dir
 chown near:near /opt
