@@ -1,4 +1,10 @@
 #!/bin/ash
 
-rc-service slim start
-rc-update add slim
+rc-service dbus start
+rc-update add dbus
+
+rc-service lightdm start
+rc-update add lightdm
+
+rc-service docker start
+rc-update add docker boot
