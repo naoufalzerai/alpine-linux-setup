@@ -36,8 +36,8 @@ adduser near video
 chown near:near /opt
 
 # mkdir /opt/docker
-mkdir -p /opt/docker
-cp ./docker/* /opt/docker/
-chown near:near /opt/docker
+# mkdir -p /opt/docker
+# cp ./docker/* /opt/docker/
+# chown near:near /opt/docker
 
 
