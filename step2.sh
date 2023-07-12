@@ -33,9 +33,6 @@ chown root:root /var/lib/AccountsService/users/near
 # add user to docker
 addgroup near docker
 
-# enable copy paste in vmware
-chmod g+s /usr/bin/vmware-user-suid-wrapper
-
 # give near write access to /opt dir
 chown near:near /opt
 
