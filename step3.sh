@@ -3,12 +3,12 @@
 rc-service dbus start
 rc-update add dbus
 
-rc-service lightdm start
-rc-update add lightdm
+# rc-service lightdm start
+# rc-update add lightdm
 
-rc-service docker start
-rc-update add docker boot
+# rc-service docker start
+# rc-update add docker boot
 
 dbus-uuidgen > /var/lib/dbus/machine-id
 
-startx /usr/bin/i3
+# startx /usr/bin/i3
