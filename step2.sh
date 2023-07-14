@@ -1,11 +1,9 @@
 #!/bin/ash
 
-apk add wget net-tools font-terminus dmenu ncurses
-apk add build-base xrandr dbus-x11 setup-xorg-base 
-# apk add i3wm i3status i3lock  xterm
-apk add mesa-gl doas dbus vim 
-apk add  libx11-dev libxinerama-dev libxft-dev
-# apk add docker docker-compose
+apk add wget net-tools dmenu ncurses
+apk add build-base 
+apk add doas dbus vim 
+apk add libx11-dev libxinerama-dev libxft-dev
 
 # add flatpak
 apk add flatpak
@@ -19,28 +17,20 @@ chown -R near:near /home/near
 # add user to groups
 adduser near wheel
 addgroup docker
-adduser near input 
 adduser near docker
-adduser near video
 
 # give near write access to /opt dir
 # chown near:near /opt
 
 setup-xorg-base
 
-#install dmenu
-mkdir code
-cd code
+#install dwm
+
 git clone https://github.com/naoufalzerai/dwm
-cd dmenu 
-make install
+cd dwm && make install
 git clone https://github.com/naoufalzerai/st
-cd ..
-cd st
-make install
+cd st && make install
 git clone https://github.com/naoufalzerai/surf
-cd ..
-cd surf
-make install
+cd surf && make install
 
 
