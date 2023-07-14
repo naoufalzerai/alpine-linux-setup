@@ -12,6 +12,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 # add user
 adduser near
 
+cp ./near/.config/ /home/near/
 chown -R near:near /home/near
 
 # add user to groups
@@ -30,3 +31,4 @@ git clone https://github.com/naoufalzerai/dwm
 cd dwm && make install
 git clone https://github.com/naoufalzerai/st
 cd st && make install
+
