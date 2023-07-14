@@ -2,7 +2,7 @@
 
 apk add wget net-tools dmenu ncurses
 apk add build-base 
-apk add doas dbus vim 
+apk add doas dbus vim setxkbmap
 apk add libx11-dev libxinerama-dev libxft-dev harfbuzz-dev 
 
 # add flatpak
@@ -24,7 +24,7 @@ adduser near docker
 # chown near:near /opt
 
 setup-xorg-base
-
+setxkbmap ca multix
 #install dwm
 
 git clone https://github.com/naoufalzerai/dwm
