@@ -13,24 +13,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 # add user
 adduser near
-# mkdir -p /home/near/wallpaper
-# mkdir -p /home/near/.config/i3
 
-# user setup near
-# cp ./near/wallpaper/compass.jpg /home/near/wallpaper/compass.jpg
-# cp ./near/.config/i3/config /home/near/.config/i3/config
-# cp ./near/.profile /home/near/.profile
-# mkdir -p /home/near/.scripts
-# cp ./near/login-script.sh /home/near/.scripts/login-script.sh
 chown -R near:near /home/near
-
-
-# greeter background
-# echo "background=/home/near/wallpaper/compass.jpg" >> /etc/lightdm/lightdm-gtk-greeter.conf
-
-# set background image in accountsservice
-# cp ./near/near /var/lib/AccountsService/users
-# chown root:root /var/lib/AccountsService/users/near
 
 # add user to groups
 adduser near wheel
@@ -43,11 +27,6 @@ adduser near video
 # chown near:near /opt
 
 setup-xorg-base
-
-# mkdir /opt/docker
-# mkdir -p /opt/docker
-# cp ./docker/* /opt/docker/
-# chown near:near /opt/docker
 
 #install dmenu
 mkdir code
