@@ -3,7 +3,7 @@
 apk add wget net-tools dmenu ncurses
 apk add build-base 
 apk add doas dbus vim 
-apk add libx11-dev libxinerama-dev libxft-dev
+apk add libx11-dev libxinerama-dev libxft-dev harfbuzz-dev 
 
 # add flatpak
 apk add flatpak
@@ -30,7 +30,3 @@ git clone https://github.com/naoufalzerai/dwm
 cd dwm && make install
 git clone https://github.com/naoufalzerai/st
 cd st && make install
-git clone https://github.com/naoufalzerai/surf
-cd surf && make install
-
-
