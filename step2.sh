@@ -52,7 +52,7 @@ setup-xorg-base
 #install dmenu
 mkdir code
 cd code
-git clone https://github.com/naoufalzerai/dmenu
+git clone https://github.com/naoufalzerai/dwm
 cd dmenu 
 make install
 git clone https://github.com/naoufalzerai/st
