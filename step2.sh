@@ -20,7 +20,7 @@ chown -R near:near /home/near
 adduser near wheel
 addgroup docker
 adduser near docker
-
+echo "permit near as root" >> /etc/doas.conf
 # give near write access to /opt dir
 # chown near:near /opt
 
